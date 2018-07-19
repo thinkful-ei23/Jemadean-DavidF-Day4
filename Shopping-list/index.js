@@ -9,3 +9,12 @@ function handleToggleClick() {
 }
 
 $(handleToggleClick);
+
+function handleDelete() {
+  $('.shopping-item-delete').click(function(event) {
+    $(this).closest('li').remove();
+    console.log('It removed it');
+  });
+}
+
+$(handleDelete);
