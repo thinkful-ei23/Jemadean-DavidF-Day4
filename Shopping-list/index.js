@@ -1,9 +1,11 @@
 'use strict';
+/* global $ */
 
 function handleToggleClick() {
   $('.shopping-item-toggle').click(function(event) {
-    event.toggleClass('.shopping-item__checked');
+    $(this).closest('li').find('.shopping-item').toggleClass('shopping-item__checked');
+    console.log('It works');
   });
 }
 
-handleToggleClick();
+$(handleToggleClick);
