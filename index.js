@@ -1,4 +1,5 @@
 'use strict';
+/* global $ */
 
 function handleThumbnailClicks() {
   $('.thumbnail img').on('click', function(event) {
